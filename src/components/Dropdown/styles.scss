@@ -1,0 +1,13 @@
+.userDropdown {
+    position: absolute;
+    top: 0;
+    max-width: 150px;
+    right: 0;  
+    margin:1rem; 
+    z-index: 100;  
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    div {
+        box-shadow: none; 
+        border-radius: 25px;
+    }
+}
