@@ -1,7 +1,8 @@
-import React from "react";
+import React from "react"; 
+import DeleteIcon from '@material-ui/icons/Delete';
 import "./styles.scss";
 
-const User = ({ info }) => {
+const User = ({ info, deleteHandler }) => {
   return (
     <div className="user-wrapper">
       <img
@@ -13,7 +14,8 @@ const User = ({ info }) => {
         <span className="user-wrapper__followers">
           {info.following.length > 1 ? info.following.length + " followers" : info.following.length + " follower" } 
         </span>
-      </div>
+      </div> 
+      <DeleteIcon onClick={() => deleteHandler(info.id)}/>
     </div>
   );
 };
