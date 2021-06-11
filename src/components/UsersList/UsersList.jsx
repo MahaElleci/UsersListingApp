@@ -16,7 +16,7 @@ const UsersList = () => {
 
     const deleteHandler = (id) => {
         var updatedData = []
-        const index = usersData.indexOf(usersData.find(item => item.id == id));
+        const index = usersData.indexOf(usersData.find(item => item.id === id));
         if (index > -1) {
             updatedData = usersData.splice(index, 1);
         }

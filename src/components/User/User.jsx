@@ -5,7 +5,8 @@ import "./styles.scss";
 const User = ({ info, deleteHandler }) => {
   return (
     <div className="user-wrapper">
-      <img
+      <img 
+      alt="user-img"
         className="user-wrapper__img"
         src="https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png"
       />
